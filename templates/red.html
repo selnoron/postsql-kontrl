@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+        input {
+            text-align: center;
+            width: 100px;
+            height: 20px;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/reg" method="post">
+        <input 
+            type="text" 
+            name="login" 
+            id="login" 
+            placeholder="login"
+        >
+        <input 
+            type="password" 
+            name="password" 
+            id="password"
+            placeholder="password"
+        >
+        <input 
+            type="text" 
+            name="name" 
+            id="name"
+            placeholder="name"
+        >
+        <input 
+            type="text" 
+            name="surname" 
+            id="surname"
+            placeholder="surname"
+        >
+        <input 
+            type="number" 
+            name="age" 
+            id="age"
+            placeholder="age"
+        >
+        <input 
+            type="number" 
+            name="author" 
+            id="author"
+            placeholder="is author(yes-1 no-2)"
+        >
+        <input 
+            style=
+            "
+                margin-left: 50px;
+                width: 50px;
+            "
+            type="submit" 
+            value="Add"
+        >
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All users</title>
+    <style>
+    .card {
+        border: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    {% for user in data %}
+    <div class="card">
+        <h1>{{ user.name }}</h1>
+        <h2>{{ user.surname }}</h2>
+    </div>
+    {% endfor %}
+</body>
+</html>

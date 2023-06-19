@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authentification</title>
+    <style>
+        input {
+            text-align: center;
+            width: 100px;
+            height: 20px;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/auth" method="post">
+        <input 
+            type="text" 
+            name="login" 
+            id="login" 
+            placeholder="login"
+        >
+        <input 
+            type="password" 
+            name="password" 
+            id="password"
+            placeholder="password"
+        >
+        <input 
+            style=
+            "
+                margin-left: 50px;
+                width: 50px;
+            "
+            type="submit" 
+            value="Check"
+        >
+    </form>
+</body>
+</html>
