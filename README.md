@@ -28,7 +28,8 @@ in development
 4) ```
    ratings (
         user_id,
-        article_id
+        article_id,
+        rate
    )
    ```
    
