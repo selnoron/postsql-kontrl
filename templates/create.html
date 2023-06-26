@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration</title>
+    <title>Forum</title>
     <style>
         input {
             text-align: center;
@@ -14,30 +14,18 @@
     </style>
 </head>
 <body>
-    <form action="/" method="post">
+    <form action="/create" method="post">
         <input 
             type="text" 
-            name="login" 
-            id="login" 
-            placeholder="login"
+            name="title" 
+            id="title" 
+            placeholder="title"
         >
         <input 
             type="text" 
-            name="password" 
-            id="password"
-            placeholder="password"
-        >
-        <input 
-            type="text" 
-            name="full_name" 
-            id="full_name"
-            placeholder="full_name"
-        >
-        <input 
-            type="number" 
-            name="author" 
-            id="author"
-            placeholder="is author(yes-1 no-2)"
+            name="text" 
+            id="text"
+            placeholder="text"
         >
         <input 
             style=
@@ -49,6 +37,5 @@
             value="Add"
         >
     </form>
-    <a href="/auth">auth</a>
 </body>
 </html>

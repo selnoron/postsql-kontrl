@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@300&family=Maven+Pro:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Forum</title>
     <style>
-        a {
-            color: black;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.082);
-            margin-right: 20px;
-        }
     </style>
 </head>
 <body>
-    <h1>WELCOME</h1>
-    <a href="/auth">Authentication</a> 
-    <a href="/reg">Registration</a>
-
-
+    <div class="site">
+        <header>
+            <div class="header">
+                <div class="head">
+                    <span class="head-text">FORUM</span>
+                </div>
+                <div class="head">
+                    <span class="head-text"><a href="/create">Написать статью</a></span>
+                </div>
+            </div>
+        </header>
+        <main>
+            {% for artc in artcs %}
+            <a href="/comment/{{ artc[0] }}" class="art-a">
+                <div class="article">
+                    <div class="art-title"><span>{{ artc[1] }}</span><span style="color: rgb(3, 104, 12);">{{artc[-1]}}/10</span></div>
+                    <div class="art-text"><span>{{ artc[2] }}</span></div>
+                </div>
+            </a>
+            {% endfor %}
+        </main>
+    </div>
 </body>
 </html>

@@ -13,6 +13,7 @@ in development
 2) ```
    authors (
         id,
+        name,
         user_id
    )
    ```
@@ -27,9 +28,7 @@ in development
 4) ```
    ratings (
         user_id,
-        article_id,
-        rate,
-        text
+        article_id
    )
    ```
    
