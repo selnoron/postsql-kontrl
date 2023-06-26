@@ -1,5 +1,5 @@
 # PostgreSQL exam
-in development
+done
 
 ## Database's tables
 1) ```
