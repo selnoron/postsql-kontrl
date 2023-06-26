@@ -28,7 +28,8 @@ in development
    ratings (
         user_id,
         article_id,
-        rate
+        rate,
+        text
    )
    ```
    
