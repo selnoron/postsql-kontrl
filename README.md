@@ -13,7 +13,6 @@ in development
 2) ```
    authors (
         id,
-        name,
         user_id
    )
    ```
