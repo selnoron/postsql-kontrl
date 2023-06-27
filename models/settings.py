@@ -5,9 +5,9 @@ def insert_user(login: str, full_name: str, password: str, author: int) -> int:
     result = DB.insert_users(login, full_name, password)
     if result != 0:
         return 1
-    print(author, type(author))
     if author == 1:
-        result2 = DB.insert_authors(DB.get_user(login)[0])
+        result2 = DB.insert_authors(DB.get_user(login))
+        print(result2)
         if result2 != 0:
             return 1
         return 0
